@@ -1,0 +1,141 @@
+
+  body {
+    margin: 0;
+    font-family: Helvetica;
+ 
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 50px 1fr 30px;
+    grid-gap: 5px;
+    height: 100vh;
+    background-color: black;
+    
+  }
+
+  .heading{
+    font-size: 45px;
+  }
+
+  #About{
+    font-size: 45px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #ffffff;
+
+  }
+  .menu {
+    font-size: 20px;
+    margin: 10px;
+    color: #442f5e;
+    text-decoration: rgb(143, 74, 189) wavy underline;
+}
+
+.hello {
+    font-family: 'League Script', cursive;
+    font-size: 169px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 45px;
+    padding-bottom: 20px;
+  }
+
+  .wavy {
+    position: relative;
+}
+
+.wavy span {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    animation: animate 1.5s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(-20px);
+    }
+
+    40%,
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+  img{
+    max-width: 50%;
+    max-height: 50%;
+    padding-left: 15px;
+    border: 3px solid white;
+    }
+
+
+    p{
+        color: white;
+        padding-left: 15px;
+        max-width: 50%;
+        max-height: 50%;
+        padding-left: 15px;
+      }
+
+a:hover{
+	font-weight: bold;
+}
+
+
+
+  #About{
+    color: white;
+    padding-left: 15px;
+
+  }
+
+
+nav, footer {
+    grid-column: span 3; /* grid-column: 1/3 */
+
+}
+
+/* nav > a:last-child {
+    margin-left: auto;
+} */
+
+
+footer {
+    background-color: #a2cbb6;
+    justify-items: flex-end;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+form {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+input, textarea {
+    border:0; outline:0;
+    padding: 1em;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    margin-left: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+ }
+
+
+
+.flex-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
